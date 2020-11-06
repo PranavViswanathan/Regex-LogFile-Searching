@@ -10,8 +10,8 @@ def readLines(logFile):
 
 
 for line in readLines(logFile):
-    mObj = re.match(r'(\d{2}/\d{2}) (\d{2}:\d{2}:\d{2}) warning:(.*)', line, re.I)
+    mObj = re.match(r'(\d{2}/\d{2}) (\d{2}:\d{2}:\d{2}) warning:(.*)', line, re.I) # Matching to warning data with date and time info
     if mObj:
         print(line.strip())
-        print(mObj.group(1), '->', mObj.group(2), '->', mObj.group(3))
+        print(mObj.group(1), '->', mObj.group(2), '->', mObj.group(3)) # printing the warning
         print()
