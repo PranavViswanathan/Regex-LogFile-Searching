@@ -1,4 +1,5 @@
-import re # importiing the regular expression library
+#Code Author : Pranav Viswanathan
+mport re # importiing the regular expression library
 
 logFile = r"D:\Programming\Regex\SampleIBMLog.txt" #Location of log file on my device
 
